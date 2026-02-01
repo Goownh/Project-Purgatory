@@ -4,12 +4,16 @@ public class OpenBook : MonoBehaviour
 {
     #region Variables
 
-    private GameObject actualBook;
+    private GameObject currentBook;
+    private Raycast ray;
     #endregion
 
     public void OnMouseDown()
     {
-        //if(CreateNewBook(); 
+        if (currentBook == null /*&& ray.currentObject == ""*/)
+        {
+            CreateNewBook();
+        } 
     }
 
     public void CreateNewBook()
