@@ -1,12 +1,9 @@
 using UnityEngine;
 
-public class OpenBook : MonoBehaviour
+public class SpawnBook : MonoBehaviour
 {
-    #region Variables
-
     private GameObject currentBook;
     private Raycast ray;
-    #endregion
 
     public void OnMouseDown()
     {

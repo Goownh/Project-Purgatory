@@ -2,11 +2,8 @@ using UnityEngine;
 
 public class Endings : MonoBehaviour
 {
-    #region Variables
-    
     public GameObject goodEndingCanvas;
     public GameObject badEndingCanvas;
-    #endregion
 
     public void Ending()
     {

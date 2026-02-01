@@ -1,23 +1,13 @@
+using System;
 using UnityEngine;
 
 public class Raycast : MonoBehaviour
 {
-    #region Variables
-    
-    private RaycastHit hit;
     public GameObject currentObject;
-    #endregion
+    public bool inputTrue;
 
-    void Update(){
-        if (Input.GetMouseButtonDown(0))
-        {
-            print("uoiyhghfc)");
-            Vector3 fwd = transform.TransformDirection(Vector3.forward);
-            if (Physics.Raycast(transform.position, fwd))
-            {
-                currentObject = hit.transform.gameObject;
-                print("jiuhygfguygfcguiyfcg");
-            }
-        }
+    private void OnMouseDown()
+    {
+        currentObject = new GameObject("");
     }
 }
