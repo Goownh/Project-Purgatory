@@ -3,7 +3,7 @@ using UnityEngine;
 public class SpawnBook : MonoBehaviour
 {
     private GameObject currentBook;
-    private Raycast ray;
+    //private Raycast ray;
 
     public void OnMouseDown()
     {
