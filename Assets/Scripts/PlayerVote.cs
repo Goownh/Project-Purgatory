@@ -17,7 +17,7 @@ public class PlayerVote : MonoBehaviour
 
     void OnMouseDown()
     {
-        /*if(!MoveBool) */Invoke("AddBook", 1f);
+        if(!MoveBool) Invoke("AddBook", 1f);
         MoveBool = true;
     }
 
